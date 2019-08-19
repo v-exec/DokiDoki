@@ -70,7 +70,7 @@ class Location {
 						var left = document.getElementById('left');
 						var right = document.getElementById('right');
 
-						if (parseInt(this.time.substring(0, 2)) < earliestCall && parseInt(this.time.substring(0, 2)) > latestCall) {
+						if (parseInt(this.time.substring(0, 2)) <= earliestCall && parseInt(this.time.substring(0, 2)) >= latestCall) {
 							document.getElementById(this.num + '-panel').style.backgroundColor = '#ccc';
 							document.getElementById(this.num + '-panel').style.color = '#fff';
 							document.getElementById(this.num + '-tags').style.color = '#fff';
