@@ -95,7 +95,6 @@ class Location {
 						createTag('◓ ' + this.sunset, this.num + '-tags');
 
 						document.getElementById(this.num + '-tags').appendChild(document.createElement('br'));
-						document.getElementById(this.num + '-tags').appendChild(document.createElement('br'));
 					}
 
 					//create tag elements for weather data

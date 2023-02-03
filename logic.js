@@ -7,10 +7,10 @@ var oneLoc = new Location(firstPerson, firstLocation, 'one'); //first person's n
 var twoLoc = new Location(secondPerson, secondLocation, 'two'); //first person's name as string, location (City, Country) as string
 
 //last day of contact (year, month, day)
-var timeLeaveStamp = new Date(2019, 07, 19);
+var timeLeaveStamp = new Date(2020, 01, 01);
 
 //first day of renewed contact (year, month, day)
-var timeMeetStamp = new Date(2019, 11, 20);
+var timeMeetStamp = new Date(2024, 11, 25);
 
 //earliest and latest time appropirate for call
 var earliestCall = 8;
@@ -67,5 +67,5 @@ setInterval(function() {
 	today = new Date();
 	heartbeats = Math.floor(dateDiff('s', today, timeMeetStamp) * heartRate);
 	if (heartbeats < 1) heartbeats = 0;
-	beats.innerHTML = heartbeats + ' heartbeats';
+	beats.innerHTML = heartbeats + ' heartbeats away';
 }, 500);
